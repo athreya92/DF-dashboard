@@ -1,0 +1,18 @@
+{
+    "minRows": 1,
+    "maxRows": 1000,
+    "columns": 12,
+    "colWidth": "auto",
+    "rowHeight": "81",
+    "margins": [10, 10],
+    "defaultSizeX": 2,
+    "defaultSizeY": 1,
+    "mobileBreakPoint": 600,
+    "resizable": {
+      "enabled": false
+    },
+    "draggable": {
+      "enabled": true,
+      "handle": ".title-header"
+    }
+  }

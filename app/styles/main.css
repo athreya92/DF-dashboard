@@ -1,0 +1,281 @@
+.nokia-brand-logo {
+    width: 100px;
+}
+
+#navbar {
+    height: 50px;
+}
+
+.material-shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#footer { 
+    margin-right: 20px;
+    padding: 15px;
+}
+
+#main-content {
+    /*margin-top: 15px;*/
+    /*padding-left: 15px;*/
+    /*margin-right: 15px;*/
+}
+
+.panel {
+    margin: 15px;
+}
+
+.title-header {
+    cursor: pointer;
+    background-color: #25334a;
+}
+
+.icon-collapse:before{
+    color: #FFF;
+}
+
+/*.icon-arrow:before{
+    color: #FFF;
+}*/
+/*.icon-back:before, .icon-bullet:before, .icon-arrow-up:before, .icon-next:before, .icon-arrow:before{
+    color : initial;
+}*/
+/*#map {
+    height: 500px;
+}*/
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background-color: white;
+    opacity: 0.9;
+    box-shadow: 0 0 0 0;
+    font-size: 15px;
+    color: #124191; 
+}
+
+.leaflet-popup-content-wrapper {
+    padding: 0px;
+}
+
+.leaflet-popup-tip-container {
+    display: none;
+}
+
+.n-login .panel .panel-body .n-login-action .n-login-forget-password a:hover, .n-login .panel .panel-body .n-login-action .n-login-forget-password a:active, .n-login .panel .panel-body .n-login-action .n-login-forget-password a:focus, .n-login .panel .panel-body .n-login-action .n-login-forget-password .n-link:hover, .n-login .panel .panel-body .n-login-action .n-login-forget-password .n-link:active, .n-login .panel .panel-body .n-login-action .n-login-forget-password .n-link:focus{
+    border-bottom: 0px;
+}
+/* Added By Manju */
+.alignRight{
+    text-align: right;    
+}
+.alignLeft{
+    text-align: left;    
+}
+.clear{
+    clear: both;
+}
+.height40{
+    height: 40px;
+    line-height: 40px
+}
+.indoorMapsText{
+    color: #0b2a67;
+    text-align: right;
+    font-weight: bold; 
+}
+.divOverflowYAuto{
+    height: 170px; overflow-y: auto;
+}
+.backGroundWhite{
+    background-color: #FFFFFF;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.blinkArrow {
+  animation: blinker 1s linear;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+.arrows{
+    height: 120px;
+    width: 120px;
+    background-color: #0b2a67;
+    margin: 5px auto auto;
+}
+
+.n-banner-1st-blue-to-white{
+    height:60px;min-width:100px;padding:0;position:relative;width:100px
+}
+.n-banner-1st-blue-to-white>.blue-mask{
+    background:linear-gradient(to bottom,#1852aa -30px,#0b2a67);bottom:0;height:50%;left:0;position:absolute;width:100%
+}
+.n-banner-1st-blue-to-white>.white-mask{
+    background:linear-gradient(to bottom,#e5e5ea -16px,#fff 78px);height:50%;left:0;position:absolute;top:0;width:100%
+}
+.n-banner-1st-blue-to-white>.blue-corner{
+    background:linear-gradient(to bottom,#1852aa,#0b2a67);border-radius:0 100px 0 0;height:100%;position:absolute;top:0;z-index:1;left:-1px;width:calc(50% + 2px)
+}
+.n-banner-1st-blue-to-white>.white-corner{
+    background:linear-gradient(to bottom,#e5e5ea -16px,#fff);border-radius:0 0 0 100px;height:100%;position:absolute;top:0;z-index:1;width:63px;right:-1px
+}
+@media (max-width:767px){
+    .n-banner-1st-blue-to-white{
+        display:none
+    }
+}
+nav {
+    background-color: rgba(13, 29, 54, 1);
+    position: relative;
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+    font-size: 16px;
+}
+.navigation {
+    float: left;
+    margin-top: 15px;
+    width: 98%;
+}
+.navigation li {
+    list-style: none;
+    margin-right: 25px;
+    display: inline;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.navigation li:last-child {
+    position: absolute;
+    right: 0;
+}
+
+/*.upArrowStyle{
+     position: absolute; margin-top: 10px; margin-left:45px; -webkit-transform: rotate(-90deg);
+}
+.leftArrowStyle{
+     position: absolute; margin-top: 50px; margin-left: 5px; -webkit-transform: rotate(-180deg);
+}
+.downArrowStyle{
+     position: absolute; margin-top: 95px; -webkit-transform: rotate(90deg); margin-left: 45px;
+}
+.rightArrowStyle{
+     position: absolute; margin-top: 50px; margin-left: 85px;
+}*/
+.upArrowStyle{
+      margin-left: 32px; position: absolute;
+}
+.leftArrowStyle{
+      margin-top: 30px; position: absolute;
+}
+.downArrowStyle{
+      margin-top: 58px; margin-left: 32px; position: absolute;
+}
+.rightArrowStyle{
+      margin-top: 30px; margin-left: 60px; position: absolute;
+}
+.centerArrowStyle{
+     margin-top: 30px; margin-left: 32px; position: absolute;
+}
+.zoomPlus, .zoomMinus{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.zoomPlus{
+    bottom: 55px;
+    font-size: 30px;
+    right: 14px;
+}
+.imgClass {
+  position: absolute;
+}
+.parentImage {
+  z-index: 1;
+}
+.childImage {
+  z-index: 3;
+}
+.videoWrapper, .videoWrapperDiv {
+	position: relative;
+	/*padding-bottom: 56.25%; /* 16:9 */
+	/*padding-top: 25px; height: 550px;*/
+    overflow: auto;
+}
+.videoWrapper video {
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+	/*width: 100%;*/
+	height: 100%;
+}
+.videoWrapperDiv{
+    overflow: hidden;
+}
+.paddingLeftRight0{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.carImageTooltip{
+    background-color: #fcfcc7;
+    border: 1px solid #f9cf00;
+    box-shadow: 0 1px 3px 0 #a6a6a6;
+    color: #000;
+    border-radius: 2px;
+    text-align: center;
+    margin: 0;
+    padding: 3px 4px 3px 6px;
+    word-wrap: break-word;
+    display: block;
+    position: absolute;
+    width: 80px;
+}
+.footerForMobile{
+    margin-top: 32px;
+}
+.paddingForCarControlDiv{
+    padding-top: 25px; padding-bottom: 25px;
+}
+.videoOfflineText{
+    color: #FFFFFF;
+    font-size: 24px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    z-index: 1000;
+}
+/*video::-webkit-media-controls {
+  display:none !important;
+}
+video::-webkit-media-controls-enclosure {
+  display:none !important;
+}*/
+
+
+@media only screen and (max-width: 800px){
+    .footerForMobile{
+        margin-top: 70px;
+    }
+    .paddingForCarControlDiv{
+        padding-top: 0px; padding-bottom: 0px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .paddingForCarControlDiv{
+        padding-top: 5px; padding-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    body, nav {
+        font-size: 10px;
+    }
+    .footerForMobile{
+        margin-top: 0px;
+    }
+    .paddingForCarControlDiv{
+        padding-top: 0px; padding-bottom: 0px;
+    }
+}

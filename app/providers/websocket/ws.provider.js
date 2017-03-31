@@ -1,0 +1,1 @@
+var webSocketProvider = angular.module("WebSocketProvider", []);

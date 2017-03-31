@@ -1,0 +1,27 @@
+.nokia-dark-blue-bg {
+  background-color: #124191;
+}
+
+.nokia-light-blue-bg {
+    background-color: #00A1CC;
+}
+
+.white {
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.nokia-ok-green-bg{
+    background-color: #00F04D;
+}
+
+.nokia-warning-yellow-bg {
+    background-color: #FFCC00;
+}
+
+.nokia-alert-red-bg {
+    background-color: #BE0006;
+}

@@ -1,0 +1,26 @@
+<div class="nokia-light-blue-bg white material-shadow title-header" style="padding:5px;">
+    <span><b ng-bind="coordinate.title"></b></span>
+</div>
+<div class="material-shadow backGroundWhite">
+    <br class="clear" />
+    <div class="container-fluid divOverflowYAuto">
+        <dl class="dl-horizontal">
+            <dt> Actual size of floor : </dt>
+            <dd> {{actualWidth}}px, {{actualHeight}}px; &nbsp; </dd>
+            <dt> Converted size of floor : </dt>
+            <dd> {{convertedWidth}}px, {{convertedHeight}}px; &nbsp; </dd>
+            <dt> Actual Path : </dt>
+            <dd> <span ng-repeat="carActualCoordinate in carActualCoordinates"> {{carActualCoordinate.x | number : 2}}px, {{carActualCoordinate.y | number : 2}}px; &nbsp; </span> </dd>
+            <dt> Converted Path : </dt>
+            <dd> <span ng-repeat="carCoordinate in carConvertedCoordinates"> {{carCoordinate.x | number : 2}}px, {{carCoordinate.y | number : 2}}px; &nbsp; </span> </dd>
+            <dt> Joystick Coordinates : </dt>
+            <dd>
+                <span ng-if="mousePickCoordsConvertedX > 0"> {{mousePickCoordsConvertedX | number : 2}}px, {{mousePickCoordsConvertedY | number : 2}}px; &nbsp; </span>
+                <span ng-if="mousePickCoordsConvertedX == 0"> - , - &nbsp; </span>  
+            </dd>
+        </dl>
+    </div>
+
+      <br class="clear"/>      
+</div>
+        

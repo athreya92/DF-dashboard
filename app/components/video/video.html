@@ -1,0 +1,49 @@
+<div class="nokia-light-blue-bg white material-shadow title-header" style="padding:5px;">
+	<span><b ng-bind="video.title"></b></span>
+</div>
+<div class="material-shadow">
+	<div id="videoPage" style="height: 494px; background-color: #000000;"> <!-- 662 -->
+		<video controls height="100%" width="100%" autoplay="true" id='remoteVideo' style="padding: 0px; position: absolute;">Your browser does not support the video tag.</video>
+		<video style="position: absolute; margin-left: 10px; display: none;" autoplay id='localVideo'>Your browser does not support the video tag.</video>
+
+		<div class="container-fluid" style="background-color: transparent; position: absolute; width: 100%; bottom: 0; z-index: 2147483647;">
+			<div class="row" ng-controller="DashboardCtrl as dashboard">
+				<div class="col-md-6">
+					<button class="btn btn-close" style="margin-left: 35px;" ng-mousedown="dashboard.arrowClicked(38)" ng-mouseup="mouseUp()">
+						<i class="icon icon-arrow-up" ng-class="{'blinkArrow': dashboard.upArrowBlink == true}"></i>
+					</button>
+					<br />
+
+					<button class="btn btn-close" ng-mousedown="dashboard.arrowClicked(37)" ng-mouseup="mouseUp()">
+						<i class="icon icon-back" ng-class="{'blinkArrow': dashboard.leftArrowBlink == true}"></i>
+					</button>
+					<button class="btn btn-close" style="cursor:default">
+						<i class="icon icon-bullet"></i>
+					</button>
+					<button class="btn btn-close" ng-mousedown="dashboard.arrowClicked(39)" ng-mouseup="mouseUp()">
+						<i class="icon icon-next" ng-class="{'blinkArrow': dashboard.rightArrowBlink == true}"></i>
+					</button>
+					<br />
+
+					<button class="btn btn-close" style="margin-left: 35px;" ng-mousedown="dashboard.arrowClicked(40)" ng-mouseup="mouseUp()">
+						<i class="icon icon-arrow" ng-class="{'blinkArrow': dashboard.downArrowBlink == true}"></i>
+					</button>
+				</div>
+				<div class="col-md-6 col-md-offset-6" style="text-align: right; position: absolute; bottom: 0;">
+					<button type="button" class="btn"  ng-click="dashboard.robot()">
+						<span> ROBOT {{dashboard.robotStartControles}} </span>
+					</button>
+					<button type="button" class="btn" ng-click="video.callHangupFn()">
+						BACK
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div ng-if="!video.hideNoiseImage" style="height: 494px; background-color: #000000;"> <!-- 662 -->
+		<div class="row container-fluid">
+			<span class="videoOfflineText"> Video Offline </span>
+			<img src="images/whiteNoise.gif" height="100%" width="100%" style="position: absolute;"/>
+		</div>
+	</div>
+</div>

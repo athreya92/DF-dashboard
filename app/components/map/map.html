@@ -1,0 +1,23 @@
+<div class="nokia-light-blue-bg white material-shadow title-header" style="padding:5px;">
+    <span><b ng-bind="map.title"></b></span>
+	 <span class="pull-right">({{map.presentPositionX}}, {{map.presentPositionY}})</span>
+</div>
+<div class="material-shadow"  ng-style="map.floorPlanDivSize" id="map" ng-click="map.showCoords($event)"> <!--  ng-click="map.showCoords($event)" -->
+    <!-- Large modal -->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>-->
+
+    <!--<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">-->
+        <!--<div class="modal-dialog modal-lg" role="document">-->
+            <!--<div class="modal-content">-->
+                <!--...-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div>
+        <img src="images/floorMaps.png" ng-style="map.floorPlanClass">
+    </div>
+    <div>
+        <img src="images/Car.png" height="74" width="14" id="carImage">
+    </div>
+</div>
